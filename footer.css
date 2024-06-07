@@ -1,0 +1,138 @@
+footer {
+    background-color: #080a33;
+    margin: 0;
+    border: 0;
+    border: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 310px;
+}
+
+.f-item-con {
+    padding: 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem;
+    flex: 1;
+}
+
+footer .app-name {
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+
+.app-name .app-initial {
+    color: var(--theme-col);
+}
+
+footer .app-info p {
+    color: white;
+    padding-left: 1.65rem;
+}
+
+footer .footer-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    height: fit-content;
+}
+
+footer ul {
+    padding-left: 1.75rem;
+    color: white;
+    font-size: 0.875rem
+        /* 14px */
+    ;
+    line-height: 1.25rem;
+    margin-top: .5rem;
+}
+
+footer ul li {
+    margin: .25rem 0;
+    cursor: pointer;
+    color: #d4d4d4;
+    width: fit-content;
+}
+
+footer ul li:hover {
+    color: white;
+}
+
+footer .help-sec {
+    grid-column-start: 2;
+}
+/* copyright*/
+.cpy {
+    position: relative;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #EEC643;
+    /* color */
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-family: 'Lucida Sans';
+
+}
+
+.g-i-t {
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.g-inp textarea {
+    height: 150px;
+}
+
+
+#feedbackForm {
+    width: 100px;
+    margin: 0 auto;
+    flex-direction: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    border:#d4d4d4;
+    border-radius: 15px 50px 30px;
+
+
+}
+
+input,textarea {
+    width: 70%;
+    padding: 10px;
+    margin-top: 5px;
+
+}
+
+button {
+    width: 75px;
+    border: 5px;
+    border-radius: 30px;
+    background-color:#EEC643;
+    color: #080a33;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.label {
+    border: dotted;
+    border-width: 10px 4px;
+    border-radius: 10px 40px;
+}
+.footer_h2{
+    color: white;
+}
+

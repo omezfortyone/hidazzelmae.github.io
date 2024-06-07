@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Department Website</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="org.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-eJ7yjWiIBnJOgFz3rF6PZLdgbHITWInKfOGF1zNrJSbCCoG74gjxJdW1HQSJL5Kl/yg4ur/UthKXJxdWnI1kkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="images/EDLogo.png" alt="Engineering Department Logo">
+            <h2>Engineering Department</h2>
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="announcement.html">Announcement</a></li>
+            <li><a href="org.html" class="active">Organization</a></li>
+            <li><a href="#">Professors</a></li>
+            <li><a href="about_us.html">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="title">
+        <h1>Our Departments</h1>
+    </section>
+
+    <div class="container">
+        <div class="card">
+            <img src="images/IELOGO.png" alt="Industrial Engineering Logo">
+            <div class="info">
+                <h2>PIIE - NCST Student Chapter</h2>
+                <p>The Philippine Institute of Industrial Engineers (PIIE) - National College of Science and Technology Student Chapter is dedicated to promoting excellence and professionalism in the field of industrial engineering. As an organization, we strive to provide opportunities for students to enhance their skills, network with industry professionals, and contribute to the community through various projects and initiatives.</p>
+                <a href="IE.html" class="btn">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/CPELOGO.png" alt="Computer Engineering Logo">
+            <div class="info">
+                <h2>I C E S - I C p E P . s e</h2>
+                <p>The Institute of Computer Engineers of the Philippines (ICpEP) - Student Edition (I C E S) is a student organization dedicated to promoting excellence in computer engineering education and practice. Our mission is to provide a platform for students to develop technical skills, foster innovation, and cultivate a strong sense of community within the field of computer engineering.</p>
+                <a href="COE.html" class="btn">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/ECELOGO.png" alt="Electronics and Communication Engineering Logo">
+            <div class="info">
+                <h2>Jr. IECEP - NCST Chapter</h2>
+                <p>The Junior Institute of Electronics and Communications Engineers of the Philippines (Jr. IECEP) - NCST Chapter is a student organization dedicated to promoting excellence in electronics and communications engineering education. Our chapter provides opportunities for students to engage in technical activities, professional development, and community outreach initiatives.</p>
+                <a href="ECE.html" class="btn">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <footer>
+            <div class="f-item-con">
+                <div class="app-info">
+                    <span class='app-name'>
+                        <span>ENGINEERING</span>
+                    </span>
+                    <p>Engineering Features: Building the Future, One Innovation at a Time..</p>
+                </div>
+                <div class="g-i-t">
+                    <div class="feedbackForms">
+                        <h2 class="footer_h2">Contact Us</h2>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <br>
+                        <label for="email"></label>
+                        <input type="text" id="email" name="email" placeholder="Email Address" required>
+                        <br>
+                        <label for="message"></label>
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        <br>
+                        <button type="submit" id="btn" onclick="sendMail()">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cpy">&copy; 2024 Engineering Department - All rights reserved</div>
+        </footer>
+        <div class="icon">
+            <img src=""> </div>
+            <script src="script.js"></script>
+            <!-- EMAILJS -->
+
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+                (function () {
+                    emailjs.init("HqqR2DCknP9Cr0gpt");
+                })();
+            </script>
+    </section>
+</body>
+
+</html>

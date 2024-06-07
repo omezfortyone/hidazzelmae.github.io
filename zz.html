@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Department Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+
+    <nav>
+        <img src="images/EDLogo.png" alt="">
+        <div class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Announcement</a></li>
+                <li><a href="org.html">Organization</a>
+                </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h2>NCST-Engineering Department Events and Announcement.</h2>
+        <p>Welcome to the NCST Community Section, dedicated to fostering collaboration and engagement among students and
+            faculty in the Engineering Department. Here, you'll find the latest news, events, and resources tailored for
+            our Industrial Engineering, Electronics Engineering, and Computer Engineering programs. Join us in
+            celebrating our achievements, exploring new opportunities, and building a vibrant academic community.</p>
+        <div class="btn">
+            <a class="blue" href="https://www.facebook.com/ncst.Engineering">Visit our Facebook page</a>
+        </div>
+
+    </section>
+
+    <section id="features">
+        <h1>Engineering Features</h1>
+        <p>Engineering Features: Building the Future, One Innovation at a Time.</p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <img src="images/community.png">
+                <h3>Community</h3>
+                <p> is multifaceted and plays a vital role in the professional and personal development of engineers. By
+                    fostering connections, promoting inclusivity, and supporting continuous learning, the engineering
+                    community can drive innovation and contribute positively to society.</p>
+            </div>
+            <div class="fea-box"><br>
+                <img src="images/career.png">
+                <h3>Career Development</h3>
+                <p>Welcome to our Career Development section, which is specifically designed to help engineering
+                    students like you reach your full potential.</p>
+            </div>
+            <div class="fea-box"><br>
+                <img src="images/academic .png">
+                <h3>Academic Resources</h3>
+                <p>Welcome to our Academic Resources section! Here, you'll find helpful materials to support your
+                    engineering studies. Dive into our collection of guides, videos, and tools to enhance your learning
+                    experience. From whitepapers to webinars, we've got you covered. Happy exploring!</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="courses">
+        <h1>Engineering Courses</h1>
+        <p>Empowering Minds, Engineering Futures.</p>
+        <div class="courses-base">
+            <div class="courses-box">
+                <img src="images/IELOGO.png">
+                <h3>Industrial Engineering</h3>
+                <p>Industrial engineering is a multidisciplinary field that combines the principles of engineering,
+                    social sciences, and management to design, optimize, and improve complex systems, processes, and
+                    organizations. It is concerned with the development, improvement, implementation, and evaluation of
+                    integrated systems of people, money, knowledge, information, equipment, energy, material, and
+                    process.</p>
+            </div>
+            <div class="courses-box">
+                <img src="images/CPELOGO.png">
+                <h3>Computer Engineering</h3>
+                <p>Computer engineering is a multidisciplinary field that combines the principles of computer science
+                    and electrical engineering to design, develop, and test computer hardware and software systems. It
+                    is a fusion of two distinct disciplines, computer science and electrical engineering, to create a
+                    new field that focuses on the design and development of computer systems, networks, and devices.</p>
+            </div>
+            <div class="courses-box">
+                <img src="images/ECELOGO.png">
+                <h3>Electronics and Communication Engineering</h3>
+                <p>Electronics and Communication Engineering (ECE) is a branch of engineering that deals with the
+                    design, development, and application of electronic circuits, devices, and communication systems. It
+                    is a multidisciplinary field that combines electrical engineering, electronics, and communication
+                    principles to create innovative solutions for various industries.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="experts">
+        <h1>Head of Engineering Department</h1>
+        <p>Where Theory Meets Practice and Innovation Flourishes.</p>
+        <div class="experts-box">
+            <div class="cluster">
+                <img src="images/pro1.webp">
+                <h6>Engr. Jay Lacaba</h6>
+                <p>Cluster Head</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="adviser">
+        <h1>Our Organization Adviser</h1>
+        <p>Where Theory Meets Practice and Innovation Flourishes.</p>
+        <div class="adviser-box">
+            <div class="org">
+                <img src="images/pro1.webp">
+                <h6>Engr. Luzviminda Ocampo</h6>
+                <p>IE Organization Adviser</p>
+            </div>
+            <div class="org">
+                <img src="images/pro1.webp">
+                <h6>Mr. Danilo Albay</h6>
+                <p>CPE Organization Adviser</p>
+            </div>
+            <div class="org">
+                <img src="images/pro1.webp">
+                <h6>Engr. Ronnel Siggy Deseo</h6>
+                <p>ECE Organization Adviser</p>
+            </div>
+        </div>
+
+    </section>
+        <footer>
+            <div class="f-item-con">
+                <div class="app-info">
+                    <span class='app-name'>
+                        <span>ENGINEERING</span>
+                    </span>
+                    <p>Engineering Features: Building the Future, One Innovation at a Time..</p>
+                </div>
+                <div class="g-i-t">
+                    <div class="feedbackForms">
+                        <h2 class="footer_h2">Contact Us</h2>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <br>
+                        <label for="email"></label>
+                        <input type="text" id="email" name="email" placeholder="Email Address" required>
+                        <br>
+                        <label for="message"></label>
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        <br>
+                        <button type="submit" id="btn" onclick="sendMail()">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cpy">&copy; 2024 Engineering Department - All rights reserved</div>
+        </footer>
+        <div class="icon">
+            <img src=""> </div>
+            <script src="script.js"></script>
+            <!-- EMAILJS -->
+
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+                (function () {
+                    emailjs.init("HqqR2DCknP9Cr0gpt");
+                })();
+            </script>
+
+</body>
+
+</html>

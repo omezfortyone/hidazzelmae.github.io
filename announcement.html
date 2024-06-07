@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcement Page</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="announcement.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="images/EDLogo.png" alt="Engineering Department Logo">
+            <h2>Engineering Department</h2>
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Announcement</a></li>
+            <li><a href="org.html" class="active">Organization</a></li>
+            <li><a href="#">Professors</a></li>
+            <li><a href="about_us.html">About</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="announcements">
+            <h1>Announcements</h1>
+            <div class="announcement-item">
+                <h2>Announcement 1</h2>
+                <p>Details about announcement 1...</p>
+            </div>
+            <div class="announcement-item">
+                <h2>Announcement 2</h2>
+                <p>Details about announcement 2...</p>
+            </div>
+            
+        </div>
+<div class="calendar">
+    <h2>Calendar</h2>
+    <div id="calendar"></div>
+    <div class="year-month-select">
+        <button onclick="previousMonth()">&lt; Previous</button>
+        <select id="monthSelect" onchange="updateCalendar()"></select>
+        <select id="yearSelect" onchange="updateCalendar()"></select>
+        <button onclick="nextMonth()">Next &gt;</button>
+    </div>
+    <div class="event-list">
+        <h3>Upcoming Events</h3>
+        <div class="event-item">
+            <p>June 10: Event 1</p>
+        </div>
+        <div class="event-item">
+            <p>June 15: Event 2</p>
+        </div>
+        
+    </div>
+</div>
+
+
+    </div>
+    <script src="announcement.js"></script>
+    <section>
+        <footer>
+            <div class="f-item-con">
+                <div class="app-info">
+                    <span class='app-name'>
+                        <span>ENGINEERING</span>
+                    </span>
+                    <p>Engineering Features: Building the Future, One Innovation at a Time..</p>
+                </div>
+                <div class="g-i-t">
+                    <div class="feedbackForms">
+                        <h2 class="footer_h2">Contact Us</h2>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <br>
+                        <label for="email"></label>
+                        <input type="text" id="email" name="email" placeholder="Email Address" required>
+                        <br>
+                        <label for="message"></label>
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        <br>
+                        <button type="submit" id="btn" onclick="sendMail()">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cpy">&copy; 2024 Engineering Department - All rights reserved</div>
+        </footer>
+        <div class="icon">
+            <img src=""> </div>
+            <script src="script.js"></script>
+            <!-- EMAILJS -->
+
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+                (function () {
+                    emailjs.init("HqqR2DCknP9Cr0gpt");
+                })();
+            </script>
+    </section>
+</body>
+</html>
